@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color:Burlywood;">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="My Webpage">
     <meta name="keywordss" content="Hello, World! website">
     <meta name="author" content="Brian Musembi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
     <title>My Webpage</title>
   </head>
   <body>
-    <h1 align="center"><u>Are You Eligible For Student Pricing To Enter The Museum?</u></h1>
-    <p><input id="size" type="text" placeholder="Enter In The Pizza Size"></p>
-    <p><input id="number" type="text" placeholder="Enter In Your Age"></p>
-    <p><button onclick="myFunction()">Verify</button></p>
+    <h1 align="center"><u>Brian's Pizza Palace</u></h1>
+    <h2><u>Menu</u></h2>
+    <ul>
+      <h3><li>Large Pizza ..........................................................................................................................................................................................................................................................$6.00</li></h3>
+      <h3><li>Extra Large Pizza ............................................................................................................................................................................................................................................ $10.00</li></h3>
+      <h3><li>1 Topping .............................................................................................................................................................................................................................................................$1.00</li></h3>
+      <h3><li>2 Toppings ...........................................................................................................................................................................................................................................................$1.75</li></h3>
+      <h3><li>3 Toppings ...........................................................................................................................................................................................................................................................$2.50</li></h3>
+      <h3><li>4 Toppings ...........................................................................................................................................................................................................................................................$3.35</li></h3>
+    </ul>  
+    <p align="center" style="font-size:30px"><u><b>Order Here</b></u></p>
+    <p><input id="size" type="text" placeholder="What Size Pizza Do You Want?" class="mytext"></p>
+    <p><input id="number" type="text" placeholder="How Many Toppings Do You Want On Your Pizza?" class="mytext"></p>
+    <button class="button button2" onclick="myFunction()">Verify</button>
     <script>
     function myFunction(){
       var size;
       var number = document.getElementById("number").value;
-      let age = number;
-      if ((size == "Large") || (age == 1)){
+      let tpngs = number;
+      if ((size == "Large") || (tpngs == 1)){
         alert("Your Subtotal Price is $7.00 Your Total Price Is $7.91");}
-      else if ((size == "Large") || (age == 2)){
+      else if ((size == "Large") || (tpngs == 2)){
         alert("Your Subtotal Price is $7.75 Your Total Price Is $8.76");}
-      else if ((size == "Large") || (age == 3)){
+      else if ((size == "Large") || (tpngs == 3)){
         alert("Your Subtotal Price is $8.50 Your Total Price Is $9.61");}
-      else if ((size == "Large") || (age == 4)){
+      else if ((size == "Large") || (tpngs == 4)){
         alert("Your Subtotal Price is $9.35 Your Total Price Is $10.57");}
-      else if ((size == "Extra Large") || (age == 1)){
+      else if ((size == "Extra Large") || (tpngs == 1)){
         alert("Your Subtotal Price is $11.00 Your Total Price Is $12.43");}
-      else if ((size == "Extra Large") || (age == 2)){
+      else if ((size == "Extra Large") || (tpngs == 2)){
         alert("Your Subtotal Price is $11.75 Your Total Price Is $13.28");}
-      else if ((size == "Extra Large") || (age == 3)){
+      else if ((size == "Extra Large") || (tpngs == 3)){
         alert("Your Subtotal Price is $12.50 Your Total Price Is $14.13");}
-      else if ((size == "Extra Large") || (age == 4)){
+      else if ((size == "Extra Large") || (tpngs == 4)){
         alert("Your Subtotal Price is $13.35 Your Total Price Is $15.09");}
       else {
         alert("You Must Choose A Large Or Extra Large Pizza With Up To Four Toppings Please!");}}
