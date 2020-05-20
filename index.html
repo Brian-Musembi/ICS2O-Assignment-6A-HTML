@@ -32,30 +32,40 @@
       <h3>
         <li>4 Toppings ...........................................................................................................................................................................................................................................................$3.35</li></h3></ul>
     <h1 align="center"><u><b>Order Here</b></u></h1>
-    <p><input id="size" type="text" placeholder="What Size Pizza Do You Want?" class="mytext"></p>
-    <p><input id="number" type="text" placeholder="How Many Toppings Do You Want On Your Pizza?" class="mytext"></p>
-    <button class="button button2" onclick="myFunction()">Verify</button>
+    <select id="size" name="pizza">
+      <option name="pizza" value="none">Please Select Your Pizza Size</option>
+      <option name="pizza" value="large">Large</option>
+      <option name="pizza" value="extralarge">Extra Large</option>
+    </select>
+    <select id="number" name="pizzatoppings">
+      <option value="none">Please Slelect How Many Toppings You Want</option>
+      <option value="1">1 Topping</option>
+      <option value="2">2 Toppings</option>
+      <option value="3">3 Toppings</option>
+      <option value="4">4 Toppings</option>
+    </select>
+    <button class="button button2" onclick="myFunction()">Order</button>
     <script>
     function myFunction(){
       var size;
       var number = document.getElementById("number").value;
       let tpngs = number;
       if ((size == "Large") || (tpngs == 1)){
-        alert("Your Subtotal Price is $7.00 Your Total Price Is $7.91");}
+        alert("Large Pizza With 1 Topping: Your Subtotal Price is $7.00 Your Total Price Is $7.91");}
       else if ((size == "Large") || (tpngs == 2)){
-        alert("Your Subtotal Price is $7.75 Your Total Price Is $8.76");}
+        alert("Large Pizza With 2 Toppings: Your Subtotal Price is $7.75 Your Total Price Is $8.76");}
       else if ((size == "Large") || (tpngs == 3)){
-        alert("Your Subtotal Price is $8.50 Your Total Price Is $9.61");}
+        alert("Large Pizza With 3 Toppings: Your Subtotal Price is $8.50 Your Total Price Is $9.61");}
       else if ((size == "Large") || (tpngs == 4)){
-        alert("Your Subtotal Price is $9.35 Your Total Price Is $10.57");}
-      else if ((size == "Extra Large") || (tpngs == 1)){
-        alert("Your Subtotal Price is $11.00 Your Total Price Is $12.43");}
+        alert("Large Pizza With 4 Toppings: Your Subtotal Price is $9.35 Your Total Price Is $10.57");}
+      if ((size == "Extra Large") || (tpngs == 1)){
+        alert("Extra Large Pizza With 1 Topping: Your Subtotal Price is $11.00 Your Total Price Is $12.43");}
       else if ((size == "Extra Large") || (tpngs == 2)){
-        alert("Your Subtotal Price is $11.75 Your Total Price Is $13.28");}
+        alert("Extra Large Pizza With 2 Toppings: Your Subtotal Price is $11.75 Your Total Price Is $13.28");}
       else if ((size == "Extra Large") || (tpngs == 3)){
-        alert("Your Subtotal Price is $12.50 Your Total Price Is $14.13");}
+        alert("Extra Large Pizza With 3 Toppings: Your Subtotal Price is $12.50 Your Total Price Is $14.13");}
       else if ((size == "Extra Large") || (tpngs == 4)){
-        alert("Your Subtotal Price is $13.35 Your Total Price Is $15.09");}
+        alert("Extra Large Pizza With 4 Toppings: Your Subtotal Price is $13.35 Your Total Price Is $15.09");}
       else {
         alert("You Must Choose A Large Or Extra Large Pizza With Up To Four Toppings Please!");}}
     </script>
